@@ -753,7 +753,7 @@ export default function Portfolio() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com/azeem-pinjari"
+                href="https://linkedin.com/in/azeem-pinjari"
                 className="w-10 h-10 bg-gradient-to-r from-gradient-start to-gradient-end rounded-full flex items-center justify-center hover:opacity-90 transition-opacity"
               >
                 <Linkedin size={20} className="text-white" />
