@@ -641,7 +641,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="text-muted-foreground">LinkedIn</p>
-                      <Link href="https://linkedin.com/azeem-pinjari" className="text-lg font-medium hover:text-primary">
+                      <Link href="https://linkedin.com/in/azeem-pinjari" className="text-lg font-medium hover:text-primary">
                         linkedin.com/in/azeem-pinjari
                       </Link>
                     </div>
