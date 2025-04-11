@@ -11,6 +11,7 @@ import profilePicture from "../assets/Profile.jpg"
 import InsightQASnapshot from "../assets/InsightQA.jpg"
 import AptiProSnapshot from "../assets/AptiPro.jpg"
 import PizagoSnapshot from "../assets/Pizago.jpg"
+import DeVoteSnapshot from "../assets/DeVote.jpg"
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme()
@@ -456,12 +457,45 @@ export default function Portfolio() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-card rounded-xl overflow-hidden shadow-lg border border-transparent hover:border-primary/50 transition-all duration-300"
+            >
+              <div className="relative h-56">
+                <Image src={DeVoteSnapshot} alt="Project 3" fill className="object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">DeVote</h3>
+                <p className="text-muted-foreground mb-4">
+                  A Blockchain based Decentralized Voting System.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-2 py-1 bg-gradient-to-r from-gradient-start to-gradient-end text-white text-sm rounded-full">
+                    React
+                  </span>
+                  <span className="px-2 py-1 bg-gradient-to-r from-gradient-start to-gradient-end text-white text-sm rounded-full">
+                    Solidity
+                  </span>
+                </div>
+                <div className="flex gap-4">
+                  <Button variant="outline" size="sm" className="flex items-center gap-2" onClick={() => window.open("https://github.com/azeem30/decentralized-voting-system", "_blank")}>
+                    <Github size={16} />
+                    <span>Code</span>
+                  </Button>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Project 4 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
               className="bg-card rounded-xl overflow-hidden shadow-lg border border-transparent hover:border-primary/50 transition-all duration-300"
             >
               <div className="relative h-56">
-                <Image src={PizagoSnapshot} alt="Project 3" fill className="object-cover" />
+                <Image src={PizagoSnapshot} alt="Project 4" fill className="object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2">Pizago</h3>
